@@ -119,9 +119,9 @@ class DiffEnhancerHandler(FileSystemEventHandler):
         # Build AI prompt
         prompt = """
         Take the text below and:  
-        1. Correct spelling/errors only if wrong  
-        2. Do not remove or shorten content  
-        3. Add clarifying notes or supplemental info to improve understanding  
+        1. Correct spelling/errors only if wrong (spelling errors should be corrected in place)
+        2. Do not remove or shorten content  (Only remove spelling errors)
+        3. Add clarifying notes or supplemental info to improve understanding  (Supplemental information should be put in parenthesis and put under a bullet point or a sub bullet point, clarifications should be added same line by being bracketed)
         4. Preserve the original formatting, indentation, bullet points, and line breaks exactly as provided  
         5. Do not include code fences (```), apologies, or filler phrases in your response  
         6. Reply only once with the improved Markdown content  
