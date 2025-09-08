@@ -123,7 +123,8 @@ class DiffEnhancerHandler(FileSystemEventHandler):
         2. Do not remove or shorten content  (Only remove spelling errors)
         3. Add clarifying notes or supplemental info to improve understanding  (Supplemental information should be put in parenthesis and put under a bullet point or a sub bullet point, clarifications should be added same line by being bracketed)
         4. Preserve the original formatting, indentation, bullet points, and line breaks exactly as provided  
-        5. Do not include code fences (```), apologies, or filler phrases in your response  
+        5. Do not include code fences (```), apologies, or filler phrases in your response 
+        7. Any mathematical equations that can be applied and put, do so with proper markdown formatting. Infer which equations and if there are equations outlined in given text, replace with the properly formatted one
         6. Reply only once with the improved Markdown content  
         Notes:
         """
